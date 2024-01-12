@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Image Gallery Effect</title>
+    <style>
+        /* Simple CSS Grid */
+
+        /* Image Gallery Effects Project */
+
+        /* CSS reset rule -- do not delete -- */
+
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Centers gallery horizontally on the page */
+        }
+
+        .image-gallery img {
+            width: 200px;
+            height: 100%;
+            margin: 10px;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        /* Add the hover effect */
+        .image-gallery img:hover {
+            opacity: 0.8;
+        }
+
+        figure {
+		    margin-bottom: 2.5rem;
+	    }
+
+        figcaption {
+            font-style: italic;
+            font-size: 0.8rem;
+            text-align: center;
+	    }
+    </style>
+</head>
+<body>
+    <div class="image-gallery">
+		<figure>
+			<img src="desert-nm1.jpg" alt="Desert Image 1">
+			<figcaption>Desert Image 1</figcaption>
+		</figure>
+
+		<figure>
+			<img src="desert-nm2.jpg" alt="Desert Image 2">
+			<figcaption>Desert Image 2</figcaption>
+		</figure>
+
+		<figure>
+			<img src="desert-nm3.jpg" alt="Desert Image 3">
+			<figcaption>Desert Image 3</figcaption>
+		</figure>
+
+		<figure>
+			<img src="desert-nm4.jpg" alt="Desert Image 4">
+			<figcaption>Desert Image 4</figcaption>
+		</figure>
+	</div>
+</body>
+</html>
